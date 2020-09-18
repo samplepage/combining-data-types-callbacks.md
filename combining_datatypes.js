@@ -47,6 +47,57 @@ const powerButton = () => {
     }
   }
   powerButton()()
-  
 
+//Model a Vending Machine--------------------------
+const vendingMachine = {
+    snacks: [
+      { name: "snickers", price: 2 },
+      { name: "skittles", price: 3 },
+      { name: "milkyway", price: 4 },
+    ],
+    vend: (arrPosition) => {
+      return vendingMachine.snacks[arrPosition].name;
+    },
+  };
+  vendingMachine.vend(2);
+
+//Callbacks--------------------------
+//1.
+const add = (argOne, argTwo) => {
+  return argOne + argTwo
+}
+add(9, 5);
+//2.
+const subtract = (argOne, argTwo) => {
+  return argOne - argTwo
+}
+subtract(9, 5);
+//3.
+const multiply = (argOne, argTwo) => {
+  return argOne * argTwo
+}
+multiply(9, 5);
+//4.
+const divide = (argOne, argTwo) => {
+  return argOne / argTwo
+}
+divide(10, 5);
+//5, 6, 7
+function calculate (num1, num2, operates) {
+  return operates(num1, num2);
+} 
+
+//Function Definition Placement------------------------
+const bar = () => {
+    console.log('bar here');
+}
+bar();
+
+const foo = () => {
+    console.log('foo here');
+}
+foo();
+
+//Error Reading-----------------------
+//There is a syntax error missing equals sign before the parenthesis, and the function call is hoisted above the function itself.
 
